@@ -10,6 +10,10 @@ app.get('/twitter',(req,res)=>{
 })
 app.get('/Youtube',(req,res)=>{
     res.send('<h2>No problem</h2>')
+   
+})
+app.get('/github',(req,res)=>{
+    res.json(githubData)
 })
 app.listen(process.env.PORT,()=>{
     console.log(`${port}`)
